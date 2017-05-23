@@ -1,18 +1,18 @@
 // JavaScript Document
 
 $(document).ready(function(e) {
-    document.addEventListener("deviceready", onDeviceReady,false);
+document.addEventListener("deviceready", onDeviceReady,false);
 	
 });
 
 function onDeviceReady(){
 	
-	$('#position').on('click',function (){
+	$('#posicion').on('click',function (){
 		getPosition();
 	});
 
-$('#position').on('click',function (){
-		getPosition();
+$('#watch').on('click',function (){
+		watchPosition();
 });
 	
 }
@@ -32,7 +32,7 @@ $('#position').on('click',function (){
 	   'longitude:'       + position.coords.longitude     +'\n' +
 	   'Altitude:'       + position.coords.altitude     +'\n' +
 	   'Accuracy:'       + position.coords.accuracy     +'\n' +
-	   'Altitude:'       + position.coords.altitudeAccuracy     +'\n' +
+	   'Altitude Accuracy:'       + position.coords.altitudeAccuracy     +'\n' +
 	   'Heading:'       + position.coords.heading     +'\n' +
 	   'Speed:'       + position.coords.speed     +'\n' +
 	   'Timestamp:'       + position.coords.timestamp     +'\n');
